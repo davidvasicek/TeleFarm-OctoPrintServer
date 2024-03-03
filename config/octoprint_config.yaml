@@ -1,7 +1,3 @@
-accessControl:
-  autologinLocal: false
-  localNetworks:
-  - 192.168.0.0/24
 api:
   allowCrossOrigin: true
   key: B62C74E4A6FB496787F886359BA8259B
@@ -195,9 +191,6 @@ server:
     serverRestartCommand: sudo service octoprint restart
     systemRestartCommand: sudo shutdown -r now
     systemShutdownCommand: sudo shutdown -h now
-  cookies:
-    samesite: none
-    secure: true
   firstRun: false
   onlineCheck:
     enabled: true
