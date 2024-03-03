@@ -1,0 +1,220 @@
+accessControl:
+  autologinLocal: false
+  localNetworks:
+  - 192.168.0.0/24
+api:
+  allowCrossOrigin: true
+  key: B62C74E4A6FB496787F886359BA8259B
+appearance:
+  color: null
+  colorIcon: true
+  components:
+    disabled:
+      navbar:
+      - systemmenu
+      - plugin_announcements
+      - plugin_simpleemergencystop
+      - plugin_psucontrol
+      - plugin_octolight
+  name: Lenka
+  showInternalFilename: false
+plugins:
+  achievements:
+    timezone: Europe/Prague
+  announcements:
+    _config_version: 1
+    channels:
+      _blog:
+        read_until: 1702886400
+      _important:
+        read_until: 1698310200
+      _octopi:
+        read_until: 1684929600
+      _plugins:
+        read_until: 1704153600
+      _releases:
+        read_until: 1696862700
+  classicwebcam:
+    _config_version: 1
+    snapshot: http://127.0.0.1:8080/?action=snapshot
+    stream: /webcam/?action=stream
+  cura:
+    cura_engine: null
+  dashboard:
+    _config_version: 2
+    _webcamArray:
+    - disableNonce: false
+      flipH: null
+      flipV: null
+      name: Default
+      rotate: null
+      streamRatio: '16:9'
+      url: null
+    clearOn_Feedrate: '2'
+    clearOn_Filament: '2'
+    clearOn_LayerGraph: '1'
+    clearOn_PrintThumbnail: '2'
+    clearOn_PrinterMessage: '2'
+    commandWidgetArray:
+    - command: echo "47.6" | bc
+      enabled: false
+      icon: command-icon.png
+      interval: '60'
+      name: Simulated Chamber
+      type: 3/4
+  discovery:
+    publicPort: 80
+    upnpUuid: 4c08d74b-4c89-43fd-ae2d-b25242b62d9b
+  errortracking:
+    unique_id: 761f45e5-5a93-47d7-bdf2-44a70ecc912a
+  excluderegion:
+    _config_version: 1
+  firmware_check:
+    ignore_infos: true
+  gcodeviewer:
+    _config_version: 1
+  gpiocontrol:
+    gpio_configurations:
+    - active_mode: active_high
+      default_state: default_off
+      icon: fas fa-power-off
+      name: Zapnutí/Vypnutí
+      pin: '4'
+  octolight:
+    light_pin: '16'
+  prusaslicerthumbnails:
+    align_inline_thumbnail: true
+    filelist_height: '1000'
+    inline_thumbnail: true
+    inline_thumbnail_position_left: true
+    inline_thumbnail_scale_value: '30'
+    resize_filelist: true
+    scale_inline_thumbnail: true
+  psucontrol:
+    GPIODevice: /dev/gpiochip0
+    _config_version: 4
+    onoffGPIOPin: '27'
+    switchingMethod: GPIO
+  softwareupdate:
+    _config_version: 9
+  tracking:
+    enabled: true
+    unique_id: 5002494f-7bf3-4b2b-9314-3c51df146327
+  uicustomizer:
+    customCSS: |-
+      :root {
+        --accent: #1abc9c;
+        --background: #1F2A40;
+      }
+    fixedFooter: false
+    mainTabs:
+    - - tab_plugin_dashboard_link
+      - true
+      - false
+      - false
+      - textOnly
+      - '#000000'
+    - - control_link
+      - true
+      - false
+      - fas fa-expand-arrows-alt
+      - iconOnly
+      - false
+    - - temp_link
+      - true
+      - false
+      - fas fa-thermometer-half
+      - true
+      - false
+    - - timelapse_link
+      - true
+      - false
+      - fas fa-film
+      - true
+      - false
+    - - term_link
+      - true
+      - false
+      - fas fa-terminal
+      - true
+      - false
+    - - gcode_link
+      - true
+      - false
+      - fab fa-codepen
+      - true
+      - false
+    - - tab_plugin_arc_welder_link
+      - true
+      - false
+      - false
+      - textOnly
+      - '#000000'
+    - - tab_plugin_prettygcode_link
+      - true
+      - false
+      - false
+      - textOnly
+      - '#000000'
+    rows:
+    - _00#files_wrapper: true
+      _01#sidebar_plugin_firmware_check_warning_wrapper: false
+      _02#sidebar_plugin_firmware_check_info_wrapper: false
+      _03#connection_wrapper: true
+    - _00div.UICmainTabs: true
+    - _00#sidebar_plugin_gpiocontrol_wrapper: true
+      _01#UICGcodeVWidget: true
+      _02#UICTempWidget: true
+      _03#UICWebCamWidget: true
+      _04#sidebar_plugin_action_command_notification_wrapper: true
+      _05#state_wrapper: true
+    theme: flatly
+    themeLocal: false
+    themeVersion: 0.2.9.8
+    topIconSort:
+    - navbar_plugin_action_command_prompt
+    - navbar_plugin_prettygcode
+    - navbar_plugin_logging_seriallog
+    - navbar_plugin_logging_plugintimingslog
+    - navbar_plugin_pi_support
+    widths:
+    - '4'
+    - '5'
+    - '3'
+  virtual_printer:
+    _config_version: 1
+printerProfiles:
+  default: test
+serial:
+  autoconnect: true
+  baudrate: 0
+  port: AUTO
+server:
+  allowFraming: true
+  commands:
+    serverRestartCommand: sudo service octoprint restart
+    systemRestartCommand: sudo shutdown -r now
+    systemShutdownCommand: sudo shutdown -h now
+  cookies:
+    samesite: none
+    secure: true
+  firstRun: false
+  onlineCheck:
+    enabled: true
+  pluginBlacklist:
+    enabled: true
+  secretKey: wO0LDyYtnQGnzhp50qQAKlbuFuOOCtgh
+  seenWizards:
+    psucontrol: 1
+temperature:
+  profiles:
+  - bed: 100
+    chamber: null
+    extruder: 210
+    name: ABS
+  - bed: 60
+    chamber: null
+    extruder: 180
+    name: PLA
+webcam:
+  ffmpeg: /usr/bin/ffmpeg
