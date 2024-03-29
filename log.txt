@@ -1,0 +1,295 @@
+2024.03.22 14:52:49 | E | index.js | Toto je chybová zpráva.
+2024.03.22 14:52:49 | I | index.js | Toto je informační zpráva.
+2024.03.22 14:52:49 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:22:20 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:22:20 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:22:20 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:22:20 | I | envConf.js | .env soubor byl úspěšně načten:
+2024.03.22 16:24:26 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:24:26 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:24:26 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:24:26 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:24:26 | I | envConf.js | .env soubor byl úspěšně načten:
+2024.03.22 16:27:13 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:27:13 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:27:13 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:27:13 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:27:13 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:28:13 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:28:13 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:28:13 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:28:13 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:28:13 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:29:05 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:29:05 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:29:05 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:29:05 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:29:05 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:30:10 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:30:10 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:30:10 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:30:10 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:30:10 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:31:50 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:31:50 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:31:50 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:31:50 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:31:50 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:36:05 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:36:05 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:36:05 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:36:05 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:36:05 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:43:39 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:43:39 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:43:39 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:43:39 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:43:39 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:44:09 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:44:09 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:44:09 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:44:09 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:44:09 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 16:44:53 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 16:44:53 | E | index.js | Toto je chybová zpráva.
+2024.03.22 16:44:53 | I | index.js | Toto je informační zpráva.
+2024.03.22 16:44:53 | W | index.js | Toto je varovná zpráva.
+2024.03.22 16:44:53 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:22:35 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:22:35 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:22:35 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:22:35 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:22:35 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:24:06 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:24:06 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:24:06 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:24:06 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:24:06 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:24:57 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:24:57 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:24:57 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:24:57 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:24:57 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:29:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:29:28 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:29:28 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:29:28 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:29:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:30:45 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:30:45 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:30:45 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:30:45 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:30:45 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:32:06 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:32:06 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:32:06 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:32:06 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:32:06 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:32:58 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:32:58 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:32:58 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:32:58 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:32:58 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:38:46 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:38:46 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:38:46 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:38:46 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:39:17 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:39:17 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:39:17 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:39:17 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:39:17 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:41:44 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:41:44 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:41:44 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:41:44 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:41:44 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:44:11 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:44:11 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:44:11 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:44:11 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:44:11 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:44:31 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:44:31 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:44:31 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:44:31 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:44:31 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.22 17:47:39 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 17:47:39 | I | index.js | Toto je informační zpráva.
+2024.03.22 17:47:39 | E | index.js | Toto je chybová zpráva.
+2024.03.22 17:47:39 | W | index.js | Toto je varovná zpráva.
+2024.03.22 17:47:39 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 18:49:13 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 18:49:13 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 18:52:24 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 18:52:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:24:59 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:24:59 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:26:28 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:26:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:28:09 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:28:09 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:31:29 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:31:29 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:32:01 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:32:01 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:32:24 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:32:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 19:41:11 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 19:41:11 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 21:06:27 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 21:06:27 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 21:06:41 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 21:06:41 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 21:07:24 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 21:07:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 21:10:00 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 21:10:00 | I | index.js | ------------------- STARTUP -------------------
+2024.03.22 21:14:12 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.22 21:14:12 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 06:46:28 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 06:46:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 06:54:40 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 06:54:40 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 07:30:55 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 07:30:55 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 07:55:34 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 07:55:34 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 07:56:22 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 07:56:22 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 08:22:02 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 08:22:02 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 08:22:56 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 08:22:56 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:08:33 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 09:08:33 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:10:23 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 09:10:23 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:11:03 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 09:11:03 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:11:48 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.23 09:11:48 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:12:08 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 09:12:08 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:13:41 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 09:13:43 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 09:52:24 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 09:52:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:06:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:06:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:07:38 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:07:38 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:08:29 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:08:29 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:09:20 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:09:21 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:10:38 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:10:39 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:14:56 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:14:56 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:15:36 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:15:37 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:16:49 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:16:49 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:19:08 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:19:08 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:21:19 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:21:19 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:22:01 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:22:01 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:22:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:22:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 10:23:13 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 10:23:13 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 11:41:18 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 11:41:18 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 11:42:33 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 11:42:33 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 11:43:09 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 11:43:09 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 11:49:20 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 11:49:20 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:15:27 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:15:27 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:17:01 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:17:01 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:17:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:17:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:19:18 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:19:18 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:21:10 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:21:10 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:22:09 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:22:09 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:33:36 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:33:36 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:34:07 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:34:07 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:53:55 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:53:55 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:55:57 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:55:58 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:56:44 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:56:44 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 12:58:43 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 12:58:43 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 13:04:42 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 13:04:42 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 13:06:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 13:06:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:09:14 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:09:14 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:12:28 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:12:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:17:40 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:17:40 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:25:35 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:25:35 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:44:55 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:44:55 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 14:47:29 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 14:47:29 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 15:01:19 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 15:01:19 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 15:05:47 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 15:05:47 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 15:09:27 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 15:09:28 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:17:11 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:17:11 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:17:57 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:17:57 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:18:46 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:18:47 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:19:25 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:19:25 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:20:47 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:20:47 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:21:32 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:21:32 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:37:02 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:37:02 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:37:42 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:37:43 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:38:37 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:38:37 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:39:17 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:39:17 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 16:41:14 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 16:41:14 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:17:24 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:17:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:18:29 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:18:29 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:19:12 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:19:13 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:20:56 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:20:56 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:24:24 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:24:24 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:24:51 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:24:51 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:25:58 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:25:58 | I | index.js | ------------------- STARTUP -------------------
+2024.03.23 17:27:37 | I | envConf.js | .env soubor byl úspěšně načten 
+2024.03.23 17:27:37 | I | index.js | ------------------- STARTUP -------------------

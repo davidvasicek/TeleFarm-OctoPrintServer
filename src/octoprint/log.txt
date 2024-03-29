@@ -1,0 +1,4 @@
+
+2024.03.24 08:11:17 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.24 08:12:28 | E | envConf.js | Chyba při načítání .env souboru 
+2024.03.24 08:12:58 | E | envConf.js | Chyba při načítání .env souboru 

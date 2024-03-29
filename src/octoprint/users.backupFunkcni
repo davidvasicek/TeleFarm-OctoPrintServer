@@ -1,0 +1,354 @@
+//const myExecSync = require('../../util/execSync.js');
+
+const dotenv = require('dotenv');
+const path = require('path');
+const result = dotenv.config({ path: '../../.env' });
+const { logError, logInfo, logWarning } = require('../../util/log.js');
+const {firebaseDB} = require('../firebase/firebaseInit.js'); // TODO pravděpodobně smazat
+const callAPI = require('./api.js');
+
+
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X POST -d '{"name": "Davidddrrr", "password":"123456789a", "active":true, "groups":["guests", "readonly"]}' http://localhost/api/access/users 
+
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X PUT -d '{"active":true, "groups":["guests", "admins"]}' http://localhost/api/access/users/Davidddrrr
+
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X POST -d '{"name": "Davidddrrr", "password":"123456789a", "active":true, "groups":["guests", "admins"]}' http://localhost/api/access/users 
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X POST -d '{"name": "Daviddd", "password":"123456789a", "active":true, "groups":["guests"]}' http://localhost/api/access/users 
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X DELETE http://192.168.0.241/api/access/users/David
+
+
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X GET http://192.168.0.241/api/access/permissions
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X GET http://192.168.0.241/api/access/groups
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X GET http://192.168.0.241/api/access/users
+
+
+//admins, guests
+//guests
+//readonly, guests
+//users, guests
+
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X PUT -d '{"active":true, "groups":["admins"]}' http://localhost/api/access/users/Davidddrrr
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X PUT -d '{"active":true, "groups":["guests"]}' http://localhost/api/access/users/Davidddrrr
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X PUT -d '{"active":true, "groups":["readonly"]}' http://localhost/api/access/users/Davidddrrr
+//curl -s -H "Content-Type: application/json" -H "X-Api-Key: 5BCFC4F0F3994C8FB131FB02F0AA0A60" -X PUT -d '{"active":true, "groups":["users"]}' http://localhost/api/access/users/Davidddrrr
+
+
+const ref_Groups = firebaseDB.ref('AccessControl/Groups');
+var apiOutput = callAPI('GET', '', 'api/access/groups');
+apiOutput.groups.forEach(function(object) {
+  ref_Groups.child(object.key).set(object);
+});
+
+const ref_Permissions = firebaseDB.ref('AccessControl/Permissions');
+var apiOutput = callAPI('GET', '', 'api/access/permissions');
+apiOutput.permissions.forEach(function(object) {
+  ref_Permissions.child(object.key).set(object);
+});
+
+
+
+
+
+
+const myServerId = 'f87af741'; 
+
+var usersListInDB = []; // Inicializace pole pro ukládání uživatelů z databáze
+
+
+
+const ref_Users = firebaseDB.ref('AccessControl/Users');
+
+ref_Users.once('value', function(snapshot) {
+
+  usersListInDB = [];
+
+  snapshot.forEach(function(childSnapshot) {
+    var key = childSnapshot.key;
+    var value = childSnapshot.val();
+
+    if (value.servers.includes(myServerId) || value.servers.includes('-1')) {
+      usersListInDB.push(value);
+    }
+  });
+
+  verifyUserLists(usersListInDB);
+});
+
+
+
+
+
+
+
+
+
+// Funkce pro ověření jednotlivých seznamů
+function verifyUserLists(dbList) {
+
+  const usersListInOctoPrintServer = []; // Inicializace pole pro ukládání uživatelů z octoprint listu
+
+  var apiOutput = callAPI('GET', '', 'api/access/users');
+  apiOutput.users.forEach(function(object) {
+    usersListInOctoPrintServer.push(object);
+  });
+
+  console.log('Seznam uživatelů db:', usersListInDB);
+  console.log('---------------------------------------');
+  console.log('Seznam uživatelů serv:', usersListInOctoPrintServer);
+
+
+  const jmenaSeznamu1 = dbList.map(objekt => objekt.name); // Vytvoření pole jmen ze seznamu 1
+  const jmenaSeznamu2 = usersListInOctoPrintServer.map(objekt => objekt.name); // Vytvoření pole jmen ze seznamu 2
+
+  const chybejiciVSeznamu2 = jmenaSeznamu1.filter(jmeno => !jmenaSeznamu2.includes(jmeno)); // Nalezení prvků, které jsou pouze v seznamu 1
+  const navicVSeznamu2 = jmenaSeznamu2.filter(jmeno => !jmenaSeznamu1.includes(jmeno)); // Nalezení prvků, které jsou pouze v seznamu 2
+
+  console.log("Chybějící prvky v octoprintu:", chybejiciVSeznamu2);
+  console.log("Prvky navíc v octoprintu:", navicVSeznamu2);
+
+ 
+
+  if(chybejiciVSeznamu2.length === 0 && navicVSeznamu2.length === 0){
+
+    // pokud seznamy sedí, proveď kontrolu, zda se něco nezměnilo něco u uživatelů
+    console.log("vše sedí, stačí poovnat zda nedošlo ke změnám");
+
+
+    compareObjects(usersListInDB, usersListInOctoPrintServer);
+
+
+  }else{
+
+    // Pro chybějící prvky v octoprintu. Vše hezky přidej
+    for (const jmeno of chybejiciVSeznamu2) {
+      console.log(`Prvek '${jmeno}' chybí v seznamu 2.`);
+      var apiOutput = callAPI('POST', '"name": "' + jmeno + '", "password":"' + '123654ll' + '", "active":' + 'true' + ', "groups":["guests", "admins"]', 'api/access/users');
+    }
+
+    // Pro prvky navíc v octoprintu. Uživatele, kteří zde nepatří smaž
+    for (const jmeno of navicVSeznamu2) {
+      console.log(`Prvek '${jmeno}' je navíc v seznamu 2.`);
+      var apiOutput = callAPI('DELETE', '', 'api/access/users/' + jmeno);
+    }
+
+    verifyUserLists(usersListInDB);
+
+  }
+  
+
+}
+
+
+function compareObjects(list1, list2) {
+  // Projdeme objekty z prvního seznamu
+
+  var count = 0;
+  list1.forEach(objekt1 => {
+    // Najdeme odpovídající objekt v druhém seznamu podle jména
+    const foundObject = list2.find(objekt2 => objekt2.name === objekt1.name);
+
+    // Pokud jsme našli odpovídající objekt, můžeme provést porovnání nebo další akce
+    console.log(`Objekt '${objekt1.name}' nalezen v obou seznamech.`);
+
+    const keysToCompare = ["active", "groups"];
+    const keysMatch = compareSpecificKeys(objekt1, foundObject, keysToCompare);
+    if (keysMatch) {
+      console.log("Hodnoty specifických klíčů se shodují.");
+    } else {
+      console.log("Hodnoty specifických klíčů se neshodují.");
+
+      // tady bude update .............................
+
+      const quotedList = objekt1.groups.map(item => `"${item}"`);
+
+      // Převést pole na řetězec s čárkami a mezerami
+      const joinedString = quotedList.join(', ');
+
+
+      var apiOutput = callAPI('PUT', '"active":' + objekt1.active + ', "groups":[' + joinedString + ']', 'api/access/users/' + objekt1.name);
+      count++;
+    }
+  
+
+  });
+
+  if(count == 0){
+
+
+  }else{
+
+    verifyUserLists(usersListInDB);
+  }
+
+
+}
+
+
+function compareSpecificKeys(obj1, obj2, keys) {
+  let isTheSame = true;
+
+
+  if (!areListsEqual(obj1.groups, obj2.groups)) {
+    isTheSame = false;
+  } 
+
+  if (obj1.active !== obj2.active) {
+    isTheSame = false;
+  }
+
+
+
+
+
+  
+/*
+  for (let key of keys) {
+    if (obj1[key] !== obj2[key]) {
+      isTheSame = false;
+      console.log("hodnota mimo: " + key);
+      break; // Pokud se liší alespoň jedna hodnota, nemusíme dále pokračovat v porovnání
+    }
+  }*/
+
+  return isTheSame;
+}
+
+
+function areListsEqual(list1, list2) {
+  // Pokud mají různé délky, určitě nejsou shodné
+  if (list1.length !== list2.length) {
+      return false;
+  }
+
+  // Seřaďte oba seznamy
+  const sortedList1 = list1.slice().sort();
+  const sortedList2 = list2.slice().sort();
+
+  // Porovnejte seřazené seznamy
+  for (let i = 0; i < sortedList1.length; i++) {
+      if (sortedList1[i] !== sortedList2[i]) {
+          return false;
+      }
+  }
+
+  // Pokud se dostaneme sem, seznamy jsou shodné
+  return true;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+
+ref_Users.once('value', function(snapshot) {
+  
+  snapshot.forEach(function(childSnapshot) {
+    var key = childSnapshot.key;
+    var value = childSnapshot.val();
+
+    if (value.servers.includes(myServerId) || value.servers.includes('-1')) {
+      usersListInDB.push(value);
+    }
+  });
+
+  var apiOutput = callAPI('GET', '', 'api/access/users');
+  apiOutput.users.forEach(function(object) {
+    usersListInOctoPrintServer.push(object);
+  });
+
+  console.log('Seznam uživatelů db:', usersListInDB);
+  console.log('---------------------------------------');
+  console.log('Seznam uživatelů serv:', usersListInOctoPrintServer);
+
+  
+  const jmenaSeznamu1 = usersListInDB.map(objekt => objekt.name); // Vytvoření pole jmen ze seznamu 1
+  const jmenaSeznamu2 = usersListInOctoPrintServer.map(objekt => objekt.name); // Vytvoření pole jmen ze seznamu 2
+
+  const chybejiciVSeznamu2 = jmenaSeznamu1.filter(jmeno => !jmenaSeznamu2.includes(jmeno)); // Nalezení prvků, které jsou pouze v seznamu 1
+  const navicVSeznamu2 = jmenaSeznamu2.filter(jmeno => !jmenaSeznamu1.includes(jmeno)); // Nalezení prvků, které jsou pouze v seznamu 2
+
+  console.log("Chybějící prvky v octoprintu:", chybejiciVSeznamu2);
+  console.log("Prvky navíc v octoprintu:", navicVSeznamu2);
+
+  // Pro chybějící prvky v octoprintu. Vše hezky přidej
+  for (const jmeno of chybejiciVSeznamu2) {
+
+    console.log(`Prvek '${jmeno}' chybí v seznamu 2.`);
+    var apiOutput = callAPI('POST', '"name": "' + jmeno + '", "password":"' + '123654ll' + '", "active":' + 'true' + ', "admin":' + 'true', 'api/access/users');
+  }
+
+  // Pro prvky navíc v octoprintu. Uživatele, kteří zde nepatří smaž
+  for (const jmeno of navicVSeznamu2) {
+
+    console.log(`Prvek '${jmeno}' je navíc v seznamu 2.`);
+    var apiOutput = callAPI('DELETE', '', 'api/access/users/' + jmeno);
+  }
+
+
+});
+
+
+
+
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
